@@ -10,13 +10,15 @@
         *{
             margin:0;
             padding:0;
+            font-size: 20px;
             font-family:sans-serif;
+            font-weight:bold;
         }
         .banner
         {
             width:100%;
             height:100vh;
-            background-image:linear-gradient();
+            background-image:linear-gradient(rgba(0,0,0,0.91),rgba(0,0,0,0.91)),url(images/Killua.gif);
             background-color: rgba(17,18,22,255);
             background-size:cover;
             background-position:center;
@@ -24,13 +26,17 @@
         .banner-picture
         {
             cursor: pointer;
-
+        }
+        img
+        {
+            width: 150px;
+            height: 175px;
         }
         .navbar
         {
-            width:85%;
+            width:65%;
             margin:auto;
-            padding:35px;
+            padding:30px;
             display:flex;
             align-items:center;
             justify-content:space-between;
@@ -40,11 +46,43 @@
         {
             list-style:none;
             display:inline-block;
-            margin:0 20px;
+            margin:0 30px;
+            position: relative;
+        }
+        
+        .navbar ul li a
+        {
             text-decoration:none;
             color:rgba(235,236,241,255);
-            text-transform: uppercase;
+            transition: 0.5s;
         }
+
+        .navbar ul li a:hover
+        {
+            color: rgba(202,26,49,255);
+        }
+
+        .content
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            color:rgba(235,236,241,255);
+            transform: translateX(-25%);
+            text-align: center;
+        }
+        .content h1
+        {
+            font-size: 70px;
+        }
+        .content p
+        {
+            margin: 20px auto;
+            font-size: 27px;
+            font-weight: 100;
+            
+        }
+        
 
     </style>
 </head>
@@ -53,21 +91,23 @@
     <div class="banner">
         <div class="navbar">
             <div class="banner-picture">
-                <a href="index.html"><gif src="images/Killua.gif"></a>
+                <a href="index.html"><img src="images/Mimi.png"></a>
             </div>
         
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="favorite.html">Favorite</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="spots.html">Spots</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="favorite.html">favorite</a></li>
+                <li><a href="skills.html">skills</a></li>
+                <li><a href="spots.html">spots</a></li>
             </ul>
         </div>
+
+        <div class="content">
+        
+            <h1>About Me</h1>
+            <p>Hello, my name is Kaden K</p>
+        </div>
+
     </div>
-    
-    <h1> Introduction</h1>
-    <p> Hi, my name is Kaden K</p>
-    <h2> About Me</h2>
-    <p> </p>
 </body>
 </html>
