@@ -10,12 +10,12 @@
         *{
             margin:0;
             padding:0;
-            font-size: 20px;
             font-family:sans-serif;
-            font-weight:bold;
         }
         .banner
         {
+            font-size: 20px;
+            font-weight: bold;
             width:100%;
             height:100vh;
             background-image:linear-gradient(rgba(0,0,0,0.91),rgba(0,0,0,0.91)),url(images/Killua.gif);
@@ -36,17 +36,18 @@
         {
             width:65%;
             margin:auto;
-            padding:30px;
+            padding:20px;
             display:flex;
             align-items:center;
             justify-content:space-between;
+            text-transform: uppercase;
         }
 
         .navbar ul li
         {
             list-style:none;
             display:inline-block;
-            margin:0 30px;
+            margin:0 25px;
             position: relative;
         }
         
@@ -66,7 +67,7 @@
         {
             width: 100%;
             position: absolute;
-            top: 50%;
+            top: 30%;
             color:rgba(235,236,241,255);
             transform: translateX(-25%);
             text-align: center;
@@ -82,7 +83,14 @@
             font-weight: 100;
             
         }
-        
+        .copyright
+        {
+            font-weight: lighter;
+            font-size:10px;
+            color:rgba(235,236,241,255);
+            text-align: center;
+            transform: translateY(6700%);
+        }
 
     </style>
 </head>
@@ -104,10 +112,13 @@
 
         <div class="content">
         
-            <h1>About Me</h1>
-            <p>Hello, my name is Kaden K</p>
+            <h1>ABOUT ME</h1>
+            <p>Hello, my name is Kaden K.</p>
         </div>
 
+        <div class="copyright">
+            <p>Copyright &copy; 2022 Kaden Kwan</p>
+        </div>
     </div>
 </body>
 </html>
