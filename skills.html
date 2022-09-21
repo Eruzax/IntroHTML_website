@@ -79,13 +79,20 @@
             align-items: center;
             font-size: 30px;
         }
+        .footer
+        {
+            height: auto;
+            width: 100%;
+            background-size: contain;
+            position:relative;
+        }
         .copyright
         {
             font-weight: lighter;
             font-size:10px;
             width: 100%;
             color:rgb(239,231,251);
-            position: absolute;
+            position: fixed;
             bottom: 5px;
             text-align: center;
         }
@@ -98,7 +105,7 @@
         <nav class="navbar">
             <div class="banner-picture">
                 <!--Top left Icon-->
-                <a href="index.html"><img src="images/Bat.gif" alt="Bat" width="150px" height="175px"></a>
+                <a href="index.html"><img src="images/Bat.gif" alt="Bat" style="width:150px;"></a>
             </div>
             <!--Links-->
             <ul>
@@ -114,17 +121,18 @@
                 <!--Form-->
                 <form class="form">
                     <input type="radio" id="1" name="1" value="1">
-                    <label for="1"><h2>Horizon</h2></label><br>
+                    <label for="1">Horizon</label><br>
                     <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-horizon-xl.jpg.adapt.320w.jpg" alt="horizon"
-                    width="250" height="300">
-                    <p>I can play Horizon in Apex Legends</p>
-                    <audio controls> <source src="/audio/Horizon VL.mp3" type="audio/mpeg"></audio>
+                    style="width:250px">
+                    <h4>I can play Horizon in Apex Legends</h4>
+                    <audio controls> <source src="/audio/HorizonVL.mp3" type="audio/mpeg"></audio>
                 </form>
             </div>
         </main>
         <footer>
             <div class="copyright">
                 <p>Copyright &copy; 2022 Kaden Kwan</p>
+                <img src="images/skillsvalid.JPG" alt="skillsvalid">
             </div>
         </footer>
     </div>

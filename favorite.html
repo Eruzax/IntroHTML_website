@@ -65,6 +65,10 @@
             text-align: center;
             color:rgb(239,231,251);
         }
+        .thead
+        {
+            font-size: larger;
+        }
         .content-table
         {
             border-collapse: collapse;
@@ -90,17 +94,23 @@
             border-bottom: 1px #FBFAFB;
             background-color: rgb(113,109,149);
         }
+        .footer
+        {
+            height: auto;
+            width: 100%;
+            background-size: contain;
+            position:relative;
+        }
         .copyright
         {
             font-weight: lighter;
             font-size:10px;
             width: 100%;
             color:rgb(239,231,251);
-            position: absolute;
+            position: fixed;
             bottom: 5px;
             text-align: center;
         }
-
     </style>
 </head>
 
@@ -109,7 +119,7 @@
         <nav class="navbar">
             <div class="banner-picture">
                 <!--Top left Icon-->
-                <a href="index.html"><img src="images/Bat.gif" alt="Bat" width="150px" height="175px"></a>
+                <a href="index.html"><img src="images/Bat.gif" alt="Bat" style="width:150px;" ></a>
             </div>
             <!--Links-->
             <ul>
@@ -125,11 +135,11 @@
             <main>
                 <!--Table-->
                 <table class="content-table">
-                    <thead>
+                    <thead class="thead">
                         <tr>
-                            <th><h2>Show<h2></th>
-                            <th><h2>Drink</h2></th>
-                            <th><h2>Color</h2></th>
+                            <th>Show</th>
+                            <th>Drink</th>
+                            <th>Color</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -139,18 +149,18 @@
                             <td><p>Pink Lemonade</p></td>
                             <td><p>Red</p></td>
                         </tr>
-
                         <tr>
-                            <td> <video controls> <source src="/videos/Killua GS.mp4" type="video/mp4"></source> </video></td>
-                            <td><img src="/images/Lemonade.png" alt="lemonade" width="150px" height="175px"></td>
-                            <td><img src="https://htmlcolorcodes.com/assets/images/colors/blood-red-color-solid-background-1920x1080.png" alt="red" width="150px" height="175px"></td>
+                            <td><video controls> <source src="videos/KilluaGS.mp4" type="video/mp4"></video></td>
+                            <td><img src="/images/Lemonade.png" alt="lemonade" style="width:150px;"></td>
+                            <td><img src="https://htmlcolorcodes.com/assets/images/colors/blood-red-color-solid-background-1920x1080.png" alt="red" style="width:150px;"></td>
                         </tr>
                     </tbody>
                 </table>
             </main>
-        <footer>
+        <footer class="footer">
             <div class="copyright">
                 <p>Copyright &copy; 2022 Kaden Kwan</p>
+                <img src="images/favvalid.JPG" alt="favvalid">
             </div>
         </footer>
     </div>
