@@ -27,11 +27,6 @@
         {
             cursor: pointer;
         }
-        img
-        {
-            width: 150px;
-            height: 175px;
-        }
         .navbar
         {
             width:65%;
@@ -62,7 +57,29 @@
         {
             color: rgb(113,109,149);
         }
-
+        .content
+        {
+            line-height: 50px;
+            width: 100%;
+            position: absolute;
+            top: 25%;
+            text-align: center;
+            color: rgb(239,231,251);
+        }
+        .next
+        {
+            color: rgb(113,109,149);
+        }
+        .next input
+        {
+            opacity: 20%;
+        }
+        .form
+        {
+            margin:0 30px;
+            align-items: center;
+            font-size: 30px;
+        }
         .copyright
         {
             font-weight: lighter;
@@ -79,10 +96,10 @@
 
 <body>
     <div class="banner">
-        <div id="nav" class="navbar">
+        <nav class="navbar">
             <div class="banner-picture">
                 <!--Top left Icon-->
-                <a href="index.html"><img src="images/Bat.gif" alt="Bat"></a>
+                <a href="index.html"><img src="images/Bat.gif" alt="Bat" width="150px" height="175px"></a>
             </div>
             <!--Links-->
             <ul>
@@ -91,7 +108,20 @@
                 <li><a href="skills.html">skills</a></li>
                 <li><a href="spots.html">spots</a></li>
             </ul>
-        </div>
+        </nav>
+        <main class="content">
+            <h1>Skills</h1>
+            <div class="next">
+                <form class="form">
+                    <input type="radio" id="1" name="1" value="1">
+                    <label for="1">Horizon</label><br>
+                    <img src="/images/Horizon.jpg" alt="horizon"
+                    width="250" height="300">
+                    <h5>I can teach you how to play Horizon in Apex Legends</h5>
+                    <audio controls> <source src="/audio/Horizon VL.mp3" type="audio/mpeg"></audio>
+                </form>
+            </div>
+        </main>
         <footer>
             <div class="copyright">
                 <p>Copyright &copy; 2022 Kaden Kwan</p>
