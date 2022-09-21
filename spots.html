@@ -28,11 +28,6 @@
         {
             cursor: pointer;
         }
-        img
-        {
-            width: 150px;
-            height: 175px;
-        }
         .navbar
         {
             width:65%;
@@ -81,14 +76,13 @@
             font-size: 40px;
             color: rgb(113,109,149);
         }
-        .next
+        .content a
         {
-            cursor: pointer;
+            text-decoration:none;
+            color:rgb(239,231,251);
             transition: 0.5s;
-            color: rgb(113,109,149);
-
         }
-        .next:hover
+        .content a:hover
         {
             color: rgb(113,109,149);
         }
@@ -111,7 +105,7 @@
         <div id="nav" class="navbar">
             <div class="banner-picture">
                 <!--Top left Icon-->
-                <a href="index.html"><img src="images/Bat.gif" alt="Bat"></a>
+                <a href="index.html"><img src="images/Bat.gif" alt="Bat" width="150px" height="175px"></a>
             </div>
             <!--Links-->
             <ul>
@@ -121,15 +115,15 @@
                 <li><a href="spots.html">spots</a></li>
             </ul>
         </div>
-        <section class="content">
-            <h1>Restaurant</h1>
-            <h2>Naruto Ramen</h2>
+        <main class="content">
+            <h1>Spots</h1>
+            <h2>Restaurant</h2>
+            <h3>Naruto Ramen</h3>
             <p>This a a japanese restaurant with three locations</p>
-            <p>Read More</p>
-            <div class="next">
-                <a href="https://narutoramenex.com/">→</a>
-            </div>
-        </section>
+            <p>This is the one in Brooklyn</p>
+            <img src="/images/Naruto Ramen.jpg" alt="ramen" width="250" height="300"></img>
+            <p><a href="https://narutoramenex.com/">Read On</a></p>
+        </main>
         <footer>
             <div class="copyright">
                 <p>Copyright &copy; 2022 Kaden Kwan</p>
